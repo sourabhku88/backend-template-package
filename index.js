@@ -66,7 +66,10 @@ const rootFiles = {
     "dependencies": {
       "dotenv": "^16.4.5",
       "express": "^4.21.1"
-    }
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.7"
+    },
   }, null, 2),
   '.gitignore': 'node_modules\n.env',
   '.env': 'PORT = \nDB_URL = \nJWT_SECRET = \n',
