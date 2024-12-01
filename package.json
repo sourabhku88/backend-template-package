@@ -1,10 +1,10 @@
 {
   "name": "basic-backend-by-sourabh",
-  "version": "1.0.1",
+  "version": "2.0.2",
   "description": "A Basic Backend template",
   "main": "index.js",
   "bin": {
-    "basic-backend-by-sourabh":"index.js"
+    "basic-backend-by-sourabh": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +14,8 @@
     "url": "git+https://github.com/sourabhku88/backend-template-package.git"
   },
   "author": "Sourabh",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^7.1.0"
+  }
 }

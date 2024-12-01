@@ -1,4 +1,4 @@
-# Simple Express Backend Template
+# Simple Express Backend Template (TypeScript,JavaScript)
 
 This is a simple template for setting up an Express.js backend with environment variable support using `dotenv`, and automatic server restart during development using `nodemon`.
 
@@ -16,7 +16,7 @@ Follow these steps to set up the project locally:
 ### 1. Just Run
 
 ```
-basic-backend-by-sourabh
+npx basic-backend-by-sourabh <folder name>
 ```
 `express` - for setting up the backend server
 `dotenv` - to load environment variables from .env file
@@ -33,7 +33,8 @@ You can add any other environment variables here as needed.
 ### 3. Open Your Project in the Browser
 By default, the app will be accessible at:
 
-http://localhost:7000
+js - http://localhost:7000
+ts - http://localhost:7000
 
 If you've changed the PORT in the .env file, make sure to open the server at the correct port.
 
