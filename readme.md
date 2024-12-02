@@ -33,14 +33,15 @@ You can add any other environment variables here as needed.
 ### 3. Open Your Project in the Browser
 By default, the app will be accessible at:
 
-js - http://localhost:7000
+js - http://localhost:5000
+
 ts - http://localhost:7000
 
 If you've changed the PORT in the .env file, make sure to open the server at the correct port.
 
-Code Structure
+JS and mongodb Folder Structure 
 
-``````
+```bash
 /<root-folder>
 ├── /node_modules/      # Project dependencies
 ├── /src/               # Source code files
@@ -56,3 +57,36 @@ Code Structure
 ├── package.json        # Project metadata and dependencies
 ├── package-lock.json   # Locked dependencies for reproducible installs
 └── README.md           # This file
+```
+
+TS and Mogodb
+```bash
+/<root-folder>
+├── /node_modules/          # Project dependencies
+├── /nginx/                 # Nginx configuration files (if any)
+├── /scripts/               # Miscellaneous scripts (if any)
+├── /test/                  # Test files
+├── /src/                   # Source code files
+│   ├── /config/            # Configuration files (e.g., database setup)
+│   │   ├── databaseConnection.ts  # Database connection logic
+│   │   ├── env.ts          # Environment variable setup
+│   │   └── morgan.ts       # Logging configuration (using morgan)
+│   ├── /utils/             # Reusable utility functions
+│   │   ├── httpError.ts    # Custom error handling
+│   │   ├── httpResponse.ts # Helper for standardizing responses
+│   │   └── logger.ts       # Logger utility
+│   ├── /controllers/       # Controllers for handling requests
+│   │   └── health.ts       # Example controller (Health check)
+│   ├── /models/            # Database models (MongoDB schemas)
+│   ├── /routes/            # Express route definitions
+│   │   └── index.ts        # Main routing logic
+│   ├── /middlewares/       # Express middlewares (e.g., auth, logging)
+│   │   └── apiAuth.ts      # Authentication middleware
+│   └── index.ts            # Main application entry point (server setup)
+├── .env                    # Environment variables file
+├── .gitignore              # Ignore node_modules and other unnecessary files
+├── package.json            # Project metadata and dependencies
+├── package-lock.json       # Locked dependencies for reproducible installs
+└── README.md               # Project documentation
+
+```
